@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Oxford Mission High School-Information details </title>
+    <link rel="icon" type="image/x-icon" href="photo/0.0.jpg">
+
+
+    <style>
+        *{
+            text-align: center;
+        }
+        #logo{
+            text-align: center;
+            /* height: 200px;
+            width: 200px; */
+        }
+        #body{
+            background: linear-gradient(320deg,#965b9b, #ffef78, #63c9b4);
+            font-family: 'Dosis', sans-serif;
+            font-display: swap;
+            height: inherit;
+        }
+        #information{
+            background-color: hwb(0 100% 0% / 0.827);
+            height: 30px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 7px 0px 0px 3px;
+        }
+
+        #im{
+            background-color: hwb(0 100% 0% / 0.827);
+            height: 30px;
+            width: 130px;
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        #photo{
+            background-color: hwb(0 100% 0% / 0.827);
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 7px 0px 0px 3px;
+            text-align: right;
+        }
+
+        #checkbox{
+            width: 18px;
+            height: 18px;
+            margin: 5px 0px 0px 3px;
+        }
+
+        button{
+            color: rgb(255, 255, 255);
+            background-color: #7ac769;
+            height: 45px;
+            width: 250px;
+            font-size: 19px;
+            text-align: center;
+        }
+        
+        /* #submit{
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4caf50;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            
+        } */
+
+    </style>
+
+</head>
+<body id="body"> 
+<!--Logo of School-->
+    <div id="logo">
+        <img src="photo/0.0.jpg" alt="">
+    </div>
+    
+
+<!-- Information for Creating Account -->
+    <form action="loging Information">
+        
+        <div>
+            <h4>
+                Your name:
+                <input type="text" name="your name" id="information" placeholder="yout name"><br>
+                Your phone number:
+                <input type="number" name="Your phone number:" id="information" placeholder="Your phone number:"><br>
+                <label for="country">Select your country</label>
+
+                <select name="Select your country" id="information">
+                    <option value="Bangladesh">Bangladesh</option>
+                </select><br>
+
+                <label for="home">Your home division:</label>
+                <select name="division" id="information">
+
+                    <option value="select">----Select----</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Barisal">Barisal</option>
+                    <option value="Chittagone">Chittagone</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Rangpur">Rangpur</option>
+                    <option value="Mymensingh">Mymensingh</option>
+                    <option value="Rajshahi">Rajshahi</option>
+                </select><br>
+
+                <label for="Zip code">Your district zip code:</label>
+                <input type="number" name="Zip code" id="information" placeholder="Zip code"><br>
+                <label for="Your address details">Your address details:</label>
+                <input type="text" name="Your address details" id="information" placeholder="Your address details"><br>
+            </h4>
+        </div>
+    <p><strong><h2> Oxford Mission High School </h2></strong></p>
+
+ <!-- OPtion (Student/Teacher) -->
+
+    <div class="Option">
+        <label for="Select Option:">I'm a:</label>
+        <select name="Select Option:" id="im">
+
+            <option value="Select"> ----Select---- </option>
+            <option value="Teacher"> Teacher </option>
+            <option value="Student"> Student </option>
+
+        </select>
+    </div>
+ <!-- form of student or teacher loging ID and photo -->
+    <div>    
+        <h4> Student/Teacher ID: 
+        <input type="text" name="Student/Teacher ID" id="information" placeholder="Student/Teacher ID"><br>
+        <label for="uploadphoto">Upload your photo:</label>
+        <input type="file" name="Upload your photo" id="photo" placeholder="Your photo must be wearing your school uniform:"><br>
+        <strong> Create A Password: </strong>
+        <input type="password" name="Create A Password" id="information" placeholder="Create A Password"><br>
+        <strong> Conform Password: </strong>
+        <input type="password" name="Conform Password" id="information" placeholder="Conform Password"> </h4>
+
+    </div>
+<!-- Checkbox -->
+    <div>
+        <h4>Conform my information:
+            <input type="checkbox" name="Conform my information" id="checkbox"></h4>
+    </div>
+    <div id="submit">
+        
+        <button type="submit">submit</button>
+        
+    </div>
+
+</form>
+</body>
+</html>
